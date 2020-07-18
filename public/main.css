@@ -1,0 +1,140 @@
+body{
+	min-height: 700px;
+    margin-top: 56px;
+    display: flex;
+    background-color: lightgrey;
+}
+#wrapper{
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #fff;
+}
+.calendar{
+	width: 75%;
+    float: right;
+}
+.sidebar{
+	width: 24%;
+	height: 500px;
+	display: inline-block;
+}
+form{
+	width: 40%;
+    margin: 10% auto;
+}
+.errors{
+	width: 30%;
+    position: absolute;
+    left: 35%;
+    text-align: center;
+}
+.errors small{
+    font-weight: 600;
+	color: mediumvioletred;
+}
+#table{
+    width: 100%;
+    height: -webkit-fill-available;
+	margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px -1px #2b2b2b;
+}
+tbody td:hover{
+	background-color: #6d93b51c;
+}
+tbody td p{
+	margin: 0;
+    display: inline-block;
+    position: sticky;
+    left: 100%;
+    top: 100%;
+    font-style: italic;
+}
+td{
+	width: 5%;
+	max-height: 56px;
+	text-align: center;
+	border: 1px solid #d4d4d4;
+	/*overflow: hidden;*/
+}
+.table{
+	background-color: #0666bb17;
+}
+.table th{
+	text-align: center;
+	border: 1px solid #d4d4d4;
+}
+.current{
+	background-color: #ff918661;
+}
+.form{
+	display: none;
+	width: unset;
+    margin: 10% auto;
+}
+.form input{
+	max-width: 139px;
+}
+.form a:last-child{
+	margin-left: 62px!important;
+}
+.form a{
+	width: unset!important;
+    display: unset!important;
+    position: unset!important;
+}
+.form input[type="text"]:focus{
+	outline: 0;
+}
+.show{
+	width: 150px;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    /*left: 15%;*/
+    top: 10px;
+}
+.exit{
+	display: none;
+	position: sticky;
+    bottom: 100%;
+    left: 100%;
+    text-align: center;
+}
+.btns{
+    width: 25px;
+    padding: 0;
+	display: inline-block;
+    position: sticky;
+    bottom: 100%;
+    overflow: hidden;
+    border-radius: 38px;
+    border: 1px solid #0000002b;
+    background-color: whitesmoke;
+}
+.btns:hover{
+	/*transition-duration: 0.5s;*/
+    border: 1px solid #928c8c;
+}
+.logout{
+	float: left;
+	padding-left: 12px;
+	list-style: none;
+}
+.logout a{
+	color: #fff;
+	font-weight: 500;
+    text-decoration: none;
+}
+.content{
+	position: unset;
+}
+.options{
+	font-size: 14px;
+	text-align: center;
+}
+.options a:last-child{
+	margin-left: 50px;
+}
