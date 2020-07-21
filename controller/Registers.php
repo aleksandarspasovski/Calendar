@@ -7,14 +7,6 @@ class Registers extends BaseController
 	function __construct()
 	{
 		parent::__construct();
-		// Session::init();
-		// $logged = Session::get('logged', true);
-		// if ($logged == false) {
-		// 	Session::destroy();
-		// 	require 'controller/Errors.php';
-		// 	$controller = new Errors();
-		// 	exit;
-		// }
 	}
 	public function index()
 	{
@@ -24,8 +16,7 @@ class Registers extends BaseController
 	{
 		$username = trim($_POST['username']);
 		$password = trim($_POST['password']);
-		// $spec = htmlspecialchars($password);
-		// var_dump($password);die;
+
 		$err = array();
 
 		if ($username == '') {
@@ -58,9 +49,6 @@ class Registers extends BaseController
 
 		$obj = new Registers_model();
 		$obj->users($username, $password);
-		// if ($req = $obj->users($username, $password)) {
-		// 	# code...
-		// }
-		// var_dump($obj->users($username, $password));die;
+
 	}
 }
